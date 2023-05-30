@@ -1,0 +1,102 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+    .serviceSection {
+     padding: 0.5rem;
+     
+    }
+ 
+ 
+    .serviceSection h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .serviceSection_details {
+        margin-top: 1rem;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+        border-radius: 1.5rem;
+        text-align: center;
+       background-color:#6c6ce5;
+       padding: 0.2rem;
+    }
+    .serviceSection_details {
+        transition: transform 0.3s ease;
+    }
+    .serviceSection_details:hover {
+        transform: scale(0.94) ;
+    }
+    .serviceSection_details h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .serviceSection_details p   {
+        font-size: 1rem;
+        padding: 1.5rem;
+         font-weight: 500;
+         text-align: center;
+         color: white;
+    }
+    .imageUi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.5rem;
+    }
+    .serviceSection_details_devlopement {
+        margin-top: 1rem;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+        border-radius: 1.5rem;
+        text-align: center;
+        background-color: #f9d74c;
+        padding: 1rem;
+    }
+    .serviceSection_details_devlopement {
+        transition: transform 0.3s ease;
+    }
+    .serviceSection_details_devlopement:hover  {
+        transform: scale(0.94);
+    }
+    .serviceSection_details_devlopement h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .serviceSection_details_devlopement p {
+        font-weight: 500;
+        padding: 1rem;
+    }
+    .btn {
+        text-align: center; 
+    }
+    .btn button  {
+        border-radius: 2rem;
+        text-transform:capitalize;
+        background: #ff4c60;
+        margin-top: 1rem;
+    }
+    .custom p {
+        text-align: center;
+        margin-top: 4rem;
+        font-weight: 600;
+    }
+    .serviceSection_1 {
+        margin-top: 2rem;
+    }
+ 
+} 

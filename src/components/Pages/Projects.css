@@ -1,0 +1,51 @@
+
+
+
+@media screen and (max-width:767px) {
+
+    .projectsList {
+        padding: 0.5rem;
+        margin-top: 3rem;
+        text-align:center;
+        
+    }
+    .projectsList h1 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .projectsList img {
+        border-radius: 1rem;
+        margin-top: 0.3rem;
+      
+      
+    }
+    .projects h1 {
+   font-size: 1.5rem;
+text-align: center;
+margin-bottom: 1rem;
+font-weight: 700;
+text-decoration: underline;
+text-transform: uppercase;
+    }
+    .image {
+        object-fit: cover;
+        transition: filter 0.3s;
+    }
+    .hovered {
+        filter: brightness(100%);
+       cursor: pointer;
+      }
+      
+      .image:hover {
+        transform: scale(0.9);
+      }
+   .image p {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+  
+   }
+
+
+}

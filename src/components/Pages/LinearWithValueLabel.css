@@ -1,0 +1,15 @@
+
+
+
+
+
+@media screen and (max-width:767px) {
+    .MuiBox-root .css-8atqhb {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 0.5rem;
+    }
+    .MuiBox-root   .MuiLinearProgress-bar1Determinate  {
+    background-color: brown;
+  }
+}

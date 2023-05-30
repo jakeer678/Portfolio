@@ -1,0 +1,42 @@
+
+
+
+
+@media screen and (max-width:767px) {
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft.css-12i7wg6-MuiPaper-root-MuiDrawer-paper  {
+        background-color:#353353;
+        color: white;
+    }
+    .css-i4bv87-MuiSvgIcon-root  {
+      color: white;
+    }
+    
+    .css-hyum1k-MuiToolbar-root {
+        background-color: #353353;
+    }
+    
+    .css-i4bv87-MuiSvgIcon-root {
+        color: #ffd15c;
+    }
+    .css-h4y409-MuiList-root {
+        padding: 4rem;
+        text-align: center;
+    }
+    .sidebarList li:hover {
+    color: #ffd15c;
+    }
+    .css-h4y409-MuiList-root {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .css-h4y409-MuiList-root {
+        margin-top: 4rem;
+    }
+}
+
+
+
+
+
+

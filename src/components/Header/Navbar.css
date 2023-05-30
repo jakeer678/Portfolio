@@ -1,0 +1,29 @@
+
+
+
+
+@media screen and (min-width:768px) {
+   .btn_menu {
+      display:none;
+   }
+}
+
+
+/* for Mobile secreen*/
+@media screen and (max-width:767px) {
+
+   .list_items {
+      background-color:#4a486d!important;
+      height: 2.3rem;
+      box-shadow: 0px 15px 12px 0px rgba(0,0,0,0.22),
+   }
+   .list_items li  {
+     display: none;
+   }
+   .btn_menu {
+      padding-left: 0.7rem;
+      display: block;
+      padding-top: 0.2rem;
+      color: #ffd15c;;
+   }
+}
