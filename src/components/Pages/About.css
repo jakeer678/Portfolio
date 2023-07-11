@@ -1,5 +1,7 @@
 
-
+.css-5xe99f-MuiLinearProgress-bar1 {
+    background-color: #ff4081;
+}
 @media screen and (min-width:767px) {
     .aboutPage {
         background-color: aliceblue;
@@ -142,7 +144,5 @@
         font-weight: 500;
         text-align: right;
     }
-    .css-5xe99f-MuiLinearProgress-bar1 {
-        background-color: #ff4081 !important;
-    }
+   
 }

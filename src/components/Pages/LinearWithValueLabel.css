@@ -1,25 +1,5 @@
 
-@media screen and (min-width:768px) {
-  .MuiBox-root .css-8atqhb {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 0.5rem;
-}
 
-.MuiBox-root .css-8atqhb {
-padding-left: 0; 
-padding-right: 0;
-}
-
-.MuiBox-root .css-p2w5x8 p {
-display: flex;
-align-items: center;
-justify-content: space-between;
-font-size: 0.88rem;
-font-weight: 550;
-}
-
-}
 
 
 
@@ -29,12 +9,16 @@ font-weight: 550;
         padding-right: 1rem;
         margin-top: 0.5rem;
     }
-
+    .MuiBox-root   .MuiLinearProgress-bar1Determinate  {
+    background-color: brown;
+  }
   .MuiBox-root .css-8atqhb {
     padding-left: 0; 
  padding-right: 0;
  }
-
+ .MuiBox-root .MuiLinearProgress-bar1Determinate {
+  background-color: #ff4081;
+ }
  .MuiBox-root .css-p2w5x8 p {
   display: flex;
   align-items: center;
@@ -42,6 +26,4 @@ font-weight: 550;
   font-size: 0.88rem;
   font-weight: 550;
  }
-
-
 }
