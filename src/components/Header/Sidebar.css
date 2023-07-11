@@ -79,7 +79,9 @@
    .css-9mgopn-MuiDivider-root {
     display: none;
 }
-
+.css-22u6wc .MuiDrawer-paper {
+    background-color: #353353;
+}
 .social-media {
     display: flex;
 align-items: center;
