@@ -44,10 +44,10 @@ export default function LinearWithValueLabel() {
         prevProgress >= 82 ? 80 : prevProgress + 5
       );
       setHtmlProgress((prevProgress) =>
-        prevProgress >= 82 ? 80  : prevProgress + 5
+        prevProgress >= 82 ? 80 : prevProgress + 5
       );
       setJavascriptProgrsess((prevProgress) =>
-        prevProgress >= 80 ? 75: prevProgress + 5
+        prevProgress >= 80 ? 75 : prevProgress + 5
       );
     }, 400);
     return () => {
@@ -60,10 +60,20 @@ export default function LinearWithValueLabel() {
   const react = "React Js";
   return (
     <Box sx={{ width: "100%" }}>
-      <LinearProgressWithLabel value={htmlProgress} html={html} />
-      <LinearProgressWithLabel value={progress} javascript={javascript} />
-      <LinearProgressWithLabel value={reactProgress} css={css} />
-      <LinearProgressWithLabel value={javascriptProgrsess} react={react} />
+      <div className="html">
+        <LinearProgressWithLabel value={htmlProgress} html={html} />
+      </div>
+
+      <div className="javascript">
+        <LinearProgressWithLabel value={progress} javascript={javascript} />
+      </div>
+      <div className="css">
+        <LinearProgressWithLabel value={reactProgress} css={css} />
+      </div>
+
+      <div className="react">
+        <LinearProgressWithLabel value={javascriptProgrsess} react={react} />
+      </div>
     </Box>
   );
 }

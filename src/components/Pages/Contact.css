@@ -1,7 +1,71 @@
 
 
 
+@media screen and (min-width:767px) {
+   .ContactHeading {
+      height: 90vh;
+      background-color:aliceblue;
+     padding-top: 3rem;
+     text-align: center;
+     padding-left: 1rem;
+     padding-right: 1rem;
+  }
+.ContactHeading h2 {
+  font-weight: 800;
+  font-size: 1.7rem;
+  color:#454360;; 
+    
+}
+.ContactHeading h3 {
+  font-weight: 700;
+  color:#454360;; 
+  padding-top: 1rem;
+}
+.ContactHeading p {
+  color:#454360;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.form-control-action input {
+  margin-top: 1.5rem;
+  border-radius: 5rem;
+  border: none;
+  box-shadow: 0 5px 20px #4543601a;
+  font-size: 0.9rem;
+  padding: 0.8rem; 
+ 
+}
+.form-control-action input::placeholder {
+  color: rgb(194, 181, 181);
+}
+.textarea-control {
+  margin-top: 1.5rem;
+}
+.textarea-control textarea {
+  border-radius: 1rem;
+  margin-top: 1.3rem;
+  border: none;
+  box-shadow: 0 5px 20px #4543601a;
+  font-size: 0.9rem;
+}
+.textarea-control textarea::placeholder {
+  color: rgb(194, 181, 181);
+}
+.action-control button {
+  background: #ff4c60;
+  margin-top: 3rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  border-radius: 2rem;
+  border: none;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  font-size: 13px;
+  font-weight: 580;
+  cursor: pointer;
+}
 
+}
 
 
 @media screen  and (max-width:767px) {

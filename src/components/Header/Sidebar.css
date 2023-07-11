@@ -1,6 +1,18 @@
 
 
+@media screen and (min-width:767px) {
 
+
+    .css-hyum1k-MuiToolbar-root {
+        background-color:#353353;
+        color: white;
+      
+    }
+ 
+    button, html [type=button] {
+        display: none;
+    }
+}
 
 @media screen and (max-width:767px) {
     .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft.css-12i7wg6-MuiPaper-root-MuiDrawer-paper  {

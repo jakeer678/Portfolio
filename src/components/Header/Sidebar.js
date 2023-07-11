@@ -20,6 +20,7 @@ import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import BadgeIcon from "@mui/icons-material/Badge";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Navbar from "./Navbar";
 const drawerWidth = 240;
 
 const sidebarList = [
@@ -86,8 +87,10 @@ export default function Sidebar() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
+    
       <AppBar position="fixed" open={open}>
         <Toolbar>
+        <Navbar />
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -200,7 +203,7 @@ export default function Sidebar() {
           </div>
           <p className="all-rights"> &copy;{currentYear} | All Rights Reserved</p>
         </List>
-
+      
         <Divider />
       </Drawer>
     </Box>

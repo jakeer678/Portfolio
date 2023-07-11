@@ -3,8 +3,20 @@
 
 
 @media screen and (min-width:768px) {
-   .btn_menu {
-      display:none;
+   .list_items {
+      display:flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left:32rem;
+   }
+   .list_items li {
+      padding-left: 2rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: aliceblue;
+      text-size-adjust: 1rem;
+      text-decoration: none;
    }
 }
 

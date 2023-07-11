@@ -25,7 +25,7 @@ const Skills = () => {
                 <img src={item.javascriptImg} alt="" className="item" />
                 <img src={item.react} alt="" className="item" />
               </div>
-              <div>
+              <div className="bottom">
                 <img src={item.tailwind} alt="" className="item" />
                 <img src={item.material} alt="" className="item" />
               </div>

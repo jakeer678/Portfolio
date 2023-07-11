@@ -15,6 +15,7 @@ import Projects from "../Pages/Projects";
 const RouteApp = () => {
   return (
     <Fragment>
+    
       <Home />
       <Sidebar />
       <About />
@@ -22,7 +23,6 @@ const RouteApp = () => {
       <Services />
       <Projects />
       <Contact />
-     
     </Fragment>
   );
 };
