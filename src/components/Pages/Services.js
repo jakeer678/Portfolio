@@ -2,6 +2,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import "./Services.css";
 import { Button } from "@mui/material";
+import { Link } from "react-scroll";
 
 const Services = () => {
   const [servicesSection, inViewSection2] = useInView({
@@ -53,7 +54,7 @@ const Services = () => {
         </div>
         <div className="btn">
           <Button variant="contained" color="warning">
-            Contact Me
+            <Link to="section-3" smooth={true} duration={1000}>Contact Me</Link>
           </Button>
         </div>
       </div>

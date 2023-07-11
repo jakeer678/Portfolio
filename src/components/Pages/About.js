@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import "./About.css";
 import { Button } from "@mui/material";
 import LinearWithValueLabel from "./LinearWithValueLabel";
+import { Link } from "react-scroll";
 const About = () => {
   const [refSection2, inViewSection2] = useInView({
     threshold: 0.5,
@@ -24,7 +25,7 @@ const About = () => {
             </p>
             <div className="btn">
               <Button variant="contained" color="warning">
-                Contact Me
+              <Link to="section-3" smooth={true} duration={1000}>Contact Me</Link>  
               </Button>
             </div>
             <div>
