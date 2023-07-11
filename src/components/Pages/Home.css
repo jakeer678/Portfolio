@@ -1,14 +1,13 @@
-.sectionHome {
-  width: 100%;  
-}
+
 
 
 @media screen and (max-width:767px) {
 
     .sectionHome {
-        background-color:#353353;
-        width: 100%;
     
+        width: 100%;
+        height: 100vh;
+        background: url("../assests/images/design.gif") 50% #353353;;
     }
     
     .profile {

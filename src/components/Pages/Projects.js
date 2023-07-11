@@ -1,66 +1,65 @@
-import React, { useState } from "react";
-import { projects } from "../assests/assests";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 import "./Projects.css";
-import Button from "@mui/material/Button";
+import { projects } from "../assests/assests";
+import { Button } from "@mui/material";
+
 const Projects = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
   const [projectsRef, inViewProjects] = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
 
-  const handleMouseEnter = (index) => {
-    setHoveredIndex(index);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredIndex(null);
-  };
-
   return (
-    <div id="projects" ref={projectsRef} className="projects">
+    <div id="projects" ref={projectsRef} className="projects-conn">
       <div className="projectsList">
-        <h1>Projects</h1>
-        {projects.map((item, index) => (
-          <div key={index}>
-            <div
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
-              className={`image ${hoveredIndex === index ? "hovered" : ""}`}
-            >
-              <p className="btnimage">{item.ecommerce}</p>
-              <img src={item.Ecommerce} alt="" className="image" />
-            </div>
+        <h1>PROJECTS ⬇</h1>
 
-            <div
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
-              className={`image ${hoveredIndex === index ? "hovered" : ""}`}
-            >
-              <p className="btnimage">{item.Expense}</p>
-              <img src={item.ExpenseTracker} alt="" />
-            </div>
+        <div>
+          {projects?.map((item) => (
+            <div key={item.id} className="image-container">
+              <div className="sub-contaner">
+                <a
+                  href="https://github.com/jakeer678/Expense-Tracker"
+                  className="text-overlay"
+                >
+                 {item.Expense}
+                </a>
+                <img src={item.ExpenseTracker} alt="" />
+              </div>
+              <div className="sub-contaner">
+                <a
+                  href="https://github.com/jakeer678/Mail-Box-Client"
+                  className="text-overlay"
+                >
+                  {item.MailBox}
+                </a>
 
-            <div
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
-              className={`image ${hoveredIndex === index ? "hovered" : ""}`}
-            >
-              <p className="btnimage">{item.MailBox}</p>
-              <img src={item.Mailboxclient} alt="" />
-            </div>
+                <img src={item.Mailboxclient} alt="" />
+              </div>
+              <div className="sub-contaner">
+                <a
+                  href="https://github.com/jakeer678/Ecommerce-website-/tree/master"
+                  className="text-overlay"
+                >
+                 {item.ecommerce}
+                </a>
 
-            <div
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
-              className={`image ${hoveredIndex === index ? "hovered" : ""}`}
-            >
-              <p className="">{item.restaurantName}</p>
-              <img src={item.restaurant} alt="" />
+                <img src={item.Ecommerce} alt="" />
+              </div>
+              <div className="sub-contaner">
+                <a
+                  href="https://github.com/jakeer678/Restaurant"
+                  className="text-overlay"
+                >
+                 {item.Restuarant}
+                </a>
+
+                <img src={item.restaurant} alt="" />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

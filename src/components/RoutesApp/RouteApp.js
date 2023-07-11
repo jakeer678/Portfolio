@@ -11,6 +11,7 @@ import Sidebar from "../Header/Sidebar";
 import Skills from "../Pages/Skills";
 import Projects from "../Pages/Projects";
 
+
 const RouteApp = () => {
   return (
     <Fragment>
@@ -21,6 +22,7 @@ const RouteApp = () => {
       <Services />
       <Projects />
       <Contact />
+     
     </Fragment>
   );
 };

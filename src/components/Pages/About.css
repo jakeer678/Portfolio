@@ -12,7 +12,8 @@
     .aboutPage {
         background-color: aliceblue;
         width: 100%;
-        padding: 0.5rem;
+        padding: 0.8rem;
+        
     }
   
  
@@ -20,12 +21,20 @@
         font-size: 1.8rem;
         font-weight: 700;
         text-align: center;
+        padding-top: 3.5rem;
+        padding-bottom: 0.2rem;
+        
     }
    .aboutPage h1:before {
     background-image: url("https://www.govardhini.com/dots-bg.f4970ee09fb834f4.png");
    }
    .aboutText {
     transition: transform 0.3s ease;
+    margin-top: 1rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
 }
     .aboutText:hover  {
         margin-top: 1rem;
@@ -37,15 +46,33 @@
      }
     .aboutText p {
        font-size: 1rem;
-      padding: 1.5rem;
-       font-weight: 500;
+      
+       font-weight: 550;
+       text-align: center;
     }
     .btn {
         padding-bottom:1.5rem ;  
+       
     }
     .btn button  {
         border-radius: 2rem;
         text-transform:capitalize;
         background-color: crimson;
+        border: none;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+       margin-bottom: 0.5rem;
+        outline: none;
+        cursor: pointer;
     }
+    .MuiBox-root .css-p2w5x8 p {
+        font-size: 0.95rem;
+        font-weight: 500;
+        text-align: right;
+    }
+   
 }

@@ -2,8 +2,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import "./Services.css";
 import { Button } from "@mui/material";
-import { assets } from "../assests/assests";
-import Skills from "./Skills";
+
 
 const Services = () => {
   const [servicesSection, inViewSection2] = useInView({
@@ -51,7 +50,7 @@ const Services = () => {
         </div>
         <div className="btn">
           <Button variant="contained" color="warning">
-            Contact Me
+            Contact Me 
           </Button>
         </div>
       </div>

@@ -15,7 +15,7 @@ const Home = () => {
         </div>
         <div className="profile_heading">
           <h2>
-            I'm a front-end developer having experience in <br></br>working
+            I'm a Software Developer having experience in <br></br>working
             across the front-end technologies <br></br>such as React.js,
             Javascript, Tailwind CSS, Bootstrap, Material-UI, CSS, HTML5.
           </h2>

@@ -2,50 +2,92 @@
 
 
 @media screen and (max-width:767px) {
-
-    .projectsList {
-        padding: 0.5rem;
-        margin-top: 3rem;
-        text-align:center;
-        
-    }
-    .projectsList h1 {
+.projects-container {
+  background-color:  aliceblue;;
+}
+    .image-container {
+        position: relative;
+        display: inline-block;
+        border-radius: 0.5rem;
+      }
+      .projectsList h1 {
+        padding: 0.2rem;
+        background-color: #648d52;
+        border-radius: 2rem;
+        color: #fff;
+        margin: 0.8rem;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
         font-size: 1.2rem;
-        font-weight: 600;
-    }
-    .projectsList img {
+      }
+      .sub-contaner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .image-container img {
+        
+        padding-left: 0.7rem;
+        padding-right: 0.5rem;
+        margin-top: 0.4rem;
+        width: 100%;
+        height: 100%;
         border-radius: 1rem;
-        margin-top: 0.3rem;
-      
-      
-    }
-    .projects h1 {
-   font-size: 1.5rem;
-text-align: center;
-margin-bottom: 1rem;
-font-weight: 700;
-text-decoration: underline;
-text-transform: uppercase;
-    }
-    .image {
-        object-fit: cover;
-        transition: filter 0.3s;
-    }
-    .hovered {
-        filter: brightness(100%);
-       cursor: pointer;
       }
       
-      .image:hover {
-        transform: scale(0.9);
+      .image-container::before {
+        content: "";
+        position: absolute;
+        width: 96%;
+        height: 101%;
+        background-color:#2219a5;
+        opacity: 0;
+        border-radius: 1rem;
+        transition: opacity 0.8s ease;
+        margin-left: 0.5rem;
+        cursor: pointer; 
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+        
       }
-   .image p {
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 1rem;
-    font-weight: 600;
-  
-   }
-
-
+      
+      .image-container:hover::before {
+        opacity: 0.9;
+      }
+      .text-overlay  {
+        position: absolute;
+        color: #fff;
+       transition: opacity .2s, visibility .2s;
+       text-align: center;
+       visibility: hidden;
+       
+      }
+    
+      .image-container:hover .text-overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+    
+      
+      .sub-contaner button  {
+        background: #ff4c60;
+        scale: 1;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        border-radius: 2rem;
+        border: none;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 580;
+        cursor: pointer;
+     }
+     .projectsList h1 {
+      font-size: 1.8rem;
+        font-weight: 700;
+        text-align: center;
+     }
+     .projects-conn {
+     
+      
+     }
 }

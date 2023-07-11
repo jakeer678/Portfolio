@@ -1,2 +1,7 @@
 
-
+.App {
+    width: 100%;
+}
+.routeApp {
+ margin-top: -1rem;
+}

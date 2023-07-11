@@ -16,8 +16,8 @@
 
 @media screen and (max-width:767px) {
     .serviceSection {
-     padding: 0.5rem;
-     
+     padding: 0.8rem;
+     text-align: center;
     }
  
  
@@ -25,6 +25,7 @@
         font-size: 1.8rem;
         font-weight: 700;
         text-align: center;
+        padding-top: 2.9rem;
     }
     .serviceSection_details {
         margin-top: 1rem;
@@ -44,6 +45,7 @@
         font-size: 1.3rem;
         font-weight: 700;
         text-align: center;
+        margin-top: 0.5rem;
     }
     .serviceSection_details p   {
         font-size: 1rem;
@@ -76,10 +78,12 @@
         font-size: 1.3rem;
         font-weight: 700;
         text-align: center;
+        margin-top: 0.5rem;
     }
     .serviceSection_details_devlopement p {
         font-weight: 500;
         padding: 1rem;
+        
     }
     .btn {
         text-align: center; 
@@ -89,6 +93,13 @@
         text-transform:capitalize;
         background: #ff4c60;
         margin-top: 1rem;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+        border-radius: 2rem;
+        border: none;
+        font-size: 0.8rem;
+        font-weight: 580;
+        cursor: pointer;
     }
     .custom p {
         text-align: center;

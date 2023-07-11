@@ -2,7 +2,7 @@ import React from "react";
 import { assets } from "../assests/assests";
 import "./Skill.css";
 import { useInView } from "react-intersection-observer";
-import Projects from "./Projects";
+
 
 const Skills = () => {
   const [skills, inViewSection3] = useInView({
@@ -11,10 +11,9 @@ const Skills = () => {
   });
 
   return (
-    <div>
-      
-      <div id="skills-section" ref={skills} className="headingSkill">
-        <h1>Skills</h1>
+    <div className="heading" id="skills-section" ref={skills}>
+      <h1>Skills ⬇ </h1>
+      <div  className="headingSkill">
         <div className="skillList">
           {assets.map((item) => (
             <div key={item.id} className="skillList-row">
@@ -38,7 +37,6 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    
     </div>
   );
 };

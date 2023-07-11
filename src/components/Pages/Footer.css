@@ -1,0 +1,43 @@
+/* .footer {
+    background-color: #312a2a;
+    padding: 20px;
+    text-align: center;
+    height: 50vh;
+  }
+  
+  .social-media {
+    margin-top: 10px;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #555555;
+    font-size: 20px;
+  }
+  
+  .social-media a:hover {
+    color: #000000;
+  }
+  
+  .copyrigh {
+    margin-top: 10px;
+  } */
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 600px) {
+    .footer {
+      padding: 10px;
+      background-color: bisque;
+    }
+    
+    .social-media a {
+      font-size: 16px;
+    }
+    
+    .copyrigh {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  }
+  

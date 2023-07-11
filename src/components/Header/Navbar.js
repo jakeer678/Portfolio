@@ -1,5 +1,4 @@
 import React from "react";
-import MenuIcon from "@mui/icons-material/Menu";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 

@@ -1,14 +1,14 @@
 import React, { Fragment, useRef, useState } from "react";
 import axios from "axios";
-import Button from "@mui/material/Button";
+
 import "./Contact.css";
 import { useInView } from "react-intersection-observer";
 const Contact = () => {
   const [loading, setLoading] = useState(false);
-  const [refSection2,inViewSection2] = useInView({
-    threshold:0.5,
-    triggerOnce:true
-  })
+  const [refSection2, inViewSection2] = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  });
   const nameInputRef = useRef();
   const emailRef = useRef();
   const phoneNumRef = useRef();
@@ -46,45 +46,58 @@ const Contact = () => {
           <div>
             <h2>Get In Touch</h2>
             <h3>Let's make something special!</h3>
-            <p>Don't like forms? Send me an email. 👋</p>
+            <p>Send me an email.👋</p>
           </div>
           <div>
             <form onSubmit={onContactSubmit}>
-              <div className="actionInput">
+              <div className=" form-control-action input">
                 <input
-                  type="text"
-                  placeholder="Your Name"
+                  type="email"
                   ref={nameInputRef}
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Your Name"
                   required
                 ></input>
               </div>
-              <div className="actionInput">
+
+              <div className=" form-control-action input">
                 <input
-                  type="number"
-                  placeholder="Your Phone"
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Your Email"
                   ref={phoneNumRef}
                   required
                 ></input>
               </div>
-              <div className="actionInput">
+              <div className=" form-control-action input">
                 <input
-                  type="text"
-                  placeholder="Email Address"
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
                   ref={emailRef}
+                  placeholder="Your Phone"
                   required
                 ></input>
               </div>
-              <div>
-                <input
-                  type="text"
+              <div className="textarea-control">
+                <textarea
                   ref={messageRef}
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
                   placeholder="Message"
-                  required
-                ></input>
+                ></textarea>
               </div>
-              <Button variant="contained" type="submit">
-                Send message
-              </Button>
+              <div className="action-control">
+                <button type="button" className="btn btn-success">
+                  Send Message
+                </button>
+              </div>
               {loading && <p>sending request...</p>}
             </form>
           </div>
