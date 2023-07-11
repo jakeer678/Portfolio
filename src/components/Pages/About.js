@@ -24,7 +24,7 @@ const About = () => {
             </p>
             <div className="btn">
               <Button variant="contained" color="warning">
-                Contact Me 
+                Contact Me
               </Button>
             </div>
             <div>
